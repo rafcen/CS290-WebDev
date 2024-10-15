@@ -1,0 +1,88 @@
+### Create 5 new keyboard switches
+
+### Switch 1
+POST http://localhost:3005/keyboardSwitches HTTP/1.1
+Content-Type: application/json
+
+{
+    "switchName": "Quinn",
+    "brand": "Gateron",
+    "switchType": "Tactile",
+    "actuationForce": 59,
+    "factoryLubed": true
+}
+
+### Switch 2
+POST http://localhost:3005/keyboardSwitches HTTP/1.1
+Content-Type: application/json
+
+{
+    "switchName": "MX Blue",
+    "brand": "Cherry",
+    "switchType": "Clicky",
+    "actuationForce": 60,
+    "factoryLubed": false
+}
+
+### Switch 3
+POST http://localhost:3005/keyboardSwitches HTTP/1.1
+Content-Type: application/json
+
+{
+    "switchName": "Purple Panda",
+    "brand": "Tecsee",
+    "switchType": "Tactile",
+    "actuationForce": 55,
+    "factoryLubed": false
+}
+
+### Switch 4
+POST http://localhost:3005/keyboardSwitches HTTP/1.1
+Content-Type: application/json
+
+{
+    "switchName": "EVA",
+    "brand": "HMX",
+    "switchType": "Linear",
+    "actuationForce": 42.5,
+    "factoryLubed": true
+
+}
+
+### Switch 5
+POST http://localhost:3005/keyboardSwitches HTTP/1.1
+Content-Type: application/json
+
+{
+    "switchName": "WS Brown Tactile",
+    "brand": "Wuque Studio",
+    "switchType": "Tactile",
+    "actuationForce": 55,
+    "factoryLubed": true
+}
+
+
+### Retrieve all keyboard switches
+GET http://localhost:3005/keyboardSwitches HTTP/1.1
+Content-Type: application/json
+
+
+### Retrieve a single keyboard switch by id
+GET http://localhost:3005/keyboardSwitches/66540069af5d5a53c74b1dd3 HTTP/1.1
+
+### Update a keyboard switch
+PUT http://localhost:3005/keyboardSwitches/66565b6148a8461b3a10ce9c HTTP/1.1
+Content-Type: application/json
+
+{
+    "_id": "66540069af5d5a53c74b1dd3",
+    "switchName": "WS Brown Tactile",
+    "brand": "Wuque Studio",
+    "switchType": "Tactile",
+    "actuationForce": 55,
+    "factoryLubed": false
+}
+
+### Delete a keyboard switch
+DELETE http://localhost:3005/keyboardSwitches/66540069af5d5a53c74b1dd3 HTTP/1.1
+
